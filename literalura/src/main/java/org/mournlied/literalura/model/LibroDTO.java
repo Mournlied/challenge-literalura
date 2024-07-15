@@ -4,8 +4,15 @@ import java.util.List;
 
 public record LibroDTO(
         String titulo,
-        List<Autor>autores,
+        Autor autor,
         List<String> generos,
-        List<String> lenguajes,
+        String lenguaje,
         Long descargas) {
+    public LibroDTO(String titulo, Autor autor, List<String> generos, String lenguaje, Long descargas) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.generos = generos;
+        this.lenguaje = lenguaje;
+        this.descargas = descargas;
     }
+} 

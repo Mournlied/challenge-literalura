@@ -1,6 +1,7 @@
 package org.mournlied.literalura;
 
 import org.mournlied.literalura.principal.Principal;
+import org.mournlied.literalura.repository.AutorRepository;
 import org.mournlied.literalura.repository.LibroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -16,13 +17,15 @@ public class LiteraluraApplication implements CommandLineRunner {
 		SpringApplication.run(LiteraluraApplication.class, args);
 	}
 	@Autowired
-	private LibroRepository repositorio;
+	private LibroRepository repositorioLibro;
+	@Autowired
+	private AutorRepository repositorioAutor;
 	
 	@Override
 	public void run(String... args) {
 		while(true) {
 			try {
-				Principal principal = new Principal(repositorio);
+				Principal principal = new Principal(repositorioLibro, repositorioAutor);
 				principal.showMenu();
 				break;
 			} catch (InputMismatchException e) {
