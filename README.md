@@ -5,9 +5,9 @@
 <p>Sin embargo, aún existen mejoras y nuevas funciones en desarrollo.</p>
 <h2 align="left">Lo que Literalura ofrece:</h2>
 <ul>
-  <li>Posibilidad de agregar nuevos libros a una base de datos a traves de la API Gutendex.</li>
-  <li>Interacción con usuarios y usuarias a traves de un menú intuitivo en la consola.</li>
-  <li>Diferentes opciones de busqueda para libros y autore.</li>
+  <li>Posibilidad de agregar nuevos libros a una base de datos a traves de la API Gutendex</li>
+  <li>Interacción con usuarios y usuarias a traves de un menú intuitivo en la consola</li>
+  <li>Diferentes opciones de busqueda para libros y autores</li>
   <li>Facilidad para agregar nuevas opciones y funcionalidades</li>
 </ul>
 <h3 align="left">Literalura utiliza</h3>
@@ -21,6 +21,7 @@
   <ul>
     <li>Lombok</li>
     <li>Jackson 2.17.1</li>
+    <li>Spring Data JPA</li>
   </ul>
 </ul>
 <h2>Desarrollado por</h2>
